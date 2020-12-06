@@ -1,0 +1,18 @@
+<Project>
+	<PropertyGroup Label="Project Types">
+		<NetCoreAppVersion>netcoreapp3.1</NetCoreAppVersion>
+		<NetStandardVersion>netstandard2.0</NetStandardVersion>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Assembly Info">
+		<Authors>Nick Burnard</Authors>
+		<Version>0.1.0</Version>
+		<AssemblyName>$(MSBuildProjectName)</AssemblyName>
+		<RootNamespace>$(MSBuildProjectName)</RootNamespace>
+	</PropertyGroup>
+
+	<PropertyGroup Label="Dependency Versions">
+		<NewtonsoftJsonVersion>12.0.3</NewtonsoftJsonVersion>
+		<MicrosoftExstenionsLogginVersion>5.0.0</MicrosoftExstenionsLogginVersion>
+	</PropertyGroup>
+</Project>

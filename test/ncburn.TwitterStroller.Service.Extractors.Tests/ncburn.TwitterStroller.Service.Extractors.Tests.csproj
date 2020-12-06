@@ -1,0 +1,13 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>$(NetCoreAppVersion)</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+	<ProjectReference Include="..\..\src\ncburn.TwitterStroller.Service.Extractors\ncburn.TwitterStroller.Service.Extractors.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Newtonsoft.Json" Version="$(NewtonsoftJsonVersion)" />
+	</ItemGroup>
+</Project>

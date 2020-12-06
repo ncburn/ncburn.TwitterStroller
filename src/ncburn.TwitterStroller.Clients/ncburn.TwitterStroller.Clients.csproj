@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFramework>$(NetStandardVersion)</TargetFramework>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<ProjectReference Include="..\ncburn.TwitterStroller.Shared\ncburn.TwitterStroller.Shared.csproj" />
+	</ItemGroup>
+</Project>
