@@ -24,5 +24,22 @@ namespace ncburn.TwitterStroller.Service.Extractors.Tests.Emojis
 			resultingSearchTree.Should().NotBeNull();
 			resultingSearchTree.Count.Should().BeGreaterThan(0);
 		}
+
+		[TestMethod]
+		[DynamicData(
+			nameof(JsonEmojiResourceFactoryTestsData.TestUnifiedRepresentationToUtf16StringReturnsExpectedData),
+			typeof(JsonEmojiResourceFactoryTestsData))]
+		public void UnifiedRepresentationToUtf16StringReturnsExpected(
+			string description,
+			string unifiedRepresentation,
+			string expectedEmoji)
+		{
+			// Arrange
+			// Act
+			var resultingString = JsonEmojiResourceFactory.UnifiedRepresentationToUtf16String(unifiedRepresentation);
+
+			// Assert
+			resultingString.Should().Be(expectedEmoji, description);
+		}
 	}
 }
